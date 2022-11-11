@@ -1,0 +1,21 @@
+CREATE TABLE `user_profile` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(255) NOT NULL,
+  `agency_name` varchar(255) DEFAULT NULL,
+  `bio` text,
+  `location` varchar(255) DEFAULT NULL,
+  `latitude` float(10,0) DEFAULT NULL,
+  `longitude` double(10,0) DEFAULT NULL,
+  `availability_from` varchar(255) DEFAULT NULL,
+  `availability_to` varchar(255) DEFAULT NULL,
+  `full_name` varchar(255) DEFAULT NULL,
+  `preferences` varchar(255) DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `profile_image` varchar(100) DEFAULT NULL,
+  `is_thumbnail` int DEFAULT NULL,
+  `device_token` longtext,
+  `isNotificationAllowed` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`,`user_id`)
+)

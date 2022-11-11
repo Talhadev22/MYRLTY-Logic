@@ -1,0 +1,51 @@
+{
+  "name": "my-rlty-logics",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.3",
+    "aws-sdk": "^2.1168.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "firebase": "^9.10.0",
+    "firebase-admin": "^11.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "moment-range": "^4.0.2",
+    "nodemon": "^2.0.16",
+    "papaparse": "^5.3.2",
+    "sails": "^1.5.2",
+    "sails-hook-cron": "^3.2.0",
+    "sails-hook-orm": "^4.0.0",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-hook-uploads": "^0.4.3",
+    "sails-mongo": "^2.0.0",
+    "sails-mysql": "2.0.0",
+    "stripe": "^10.10.0",
+    "util": "^0.12.4",
+    "utils": "^0.3.1",
+    "viable-utils": "^1.1.8"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production nodemon app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/muzammil/my-rlty-logics.git"
+  },
+  "author": "muzammil",
+  "license": "",
+  "engines": {
+    "node": "^18.19"
+  }
+}
